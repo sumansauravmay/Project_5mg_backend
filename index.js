@@ -53,7 +53,7 @@ app.use("/ayurveda", AyurvedaRoute);
 // ayurveda page-----
 
 
-app.listen(4001,async()=>{
+app.listen(process.env.port,async()=>{
     try{
         await connection
         console.log("Connected to database")
